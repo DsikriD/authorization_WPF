@@ -1,0 +1,41 @@
+﻿<Page x:Class="AppWorkWithBD.basicWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AppWorkWithBD"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800"
+      Title="basicWindow" Background="Black">
+
+    <Grid >
+        <StackPanel Orientation="Horizontal">
+            <Rectangle Width="40"/>
+            <StackPanel Orientation="Vertical">
+                <Rectangle Height="40"/>
+                <Label x:Name="lbl_name" Content="USER NAME" Foreground="#FF2BFF28" FontFamily="Arial Black" FontSize="20" />
+                <Label Content="Your Order:" Margin="0,10" Foreground="#FF2BFF28" FontFamily="Arial Black" FontSize="17" />
+                <ListBox x:Name="ListOrder" Height="148" d:ItemsSource="{d:SampleData ItemCount=5}" Width="238"/>
+                <Button x:Name="btnExit" Margin="0,10" Content="Exit" Width="100" BorderThickness="2" Background="Black" FontFamily="Arial Black" FontSize="20" Foreground="#FF2BFF28" HorizontalAlignment="Left" Click="btnExit_Click"/>
+                <Rectangle Height="40"/>
+            </StackPanel>
+            <Rectangle Width="40"/>
+            <StackPanel Orientation="Vertical">
+                <Rectangle Height="40"/>
+                <Label Content="Add Order" Foreground="#FF2BFF28" FontFamily="Arial Black" FontSize="20" />
+                <ComboBox x:Name="CmbProd" Width="210" Margin="5,10"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Rectangle Height="40"/>
+                <Label Content="Amount" Foreground="#FF2BFF28" FontFamily="Arial Black" FontSize="20" />
+                <TextBox x:Name="txbAmount" Text="1" IsReadOnly="True" Margin="5,10" />
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="LeftB" Content="← " Margin="5,0" Click="LeftB_Click" Background="Black" Foreground="#FF2BFF28"/>
+                    <Button x:Name="RightB" Content=" →" Click="RightB_Click" Background="Black" Foreground="#FF2BFF28"/>
+                </StackPanel>
+                <Button x:Name="DoOrder" Content="buy" Margin="5,10" Background="Black" Foreground="#FF2BFF28" FontFamily="Arial Black" FontSize="14" Click="DoOrder_Click" />
+            </StackPanel>
+            <Rectangle Width="40"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,10 @@
+﻿<Window x:Class="AppWorkWithBD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppWorkWithBD"
+        mc:Ignorable="d"
+        Title="Application" SizeToContent="WidthAndHeight" Background="Black"  ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Normal" Icon="./Resource/icon.png" d:DesignHeight="284.76" d:DesignWidth="385.503">
+    <Frame x:Name="MainFrame"/>
+</Window>

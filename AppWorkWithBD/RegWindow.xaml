@@ -1,0 +1,26 @@
+﻿<Page x:Class="AppWorkWithBD.RegWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AppWorkWithBD"
+      mc:Ignorable="d" 
+      d:DesignHeight="317.143" d:DesignWidth="800"
+      Title="RegWindow">
+
+    <Grid Background="Black">
+        <StackPanel Orientation="Horizontal">
+            <Rectangle Width="30"/>
+            <StackPanel Orientation="Vertical">
+                <Label Content="Register" Foreground="#FF55DD2C" FontFamily="Arial Black" FontSize="22"/>
+                <Label Content="Login" Foreground="#FF55DD2C" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="14"/>
+                <TextBox x:Name="txbLogin"/>
+                <Label Content="Password" Foreground="#FF55DD2C" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="14"/>
+                <PasswordBox x:Name="PasBox"/>
+                <Button x:Name="BtnReg" Content="Register" Margin="0,20" Foreground="#FF55DD2C" FontFamily="Arial Black"  Background="Black" BorderThickness="2" Click="BtnReg_Click"></Button>
+            </StackPanel>
+            <Rectangle Width="30"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>
